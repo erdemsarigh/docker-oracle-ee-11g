@@ -6,11 +6,12 @@ set -e
 cat /etc/security/limits.conf | grep -v oracle | tee /etc/security/limits.conf
 
 echo 'Downloading linux.x64_11gR2_database_1of2.zip'
-wget -q -O linux.x64_11gR2_database_1of2.zip https://bupa-shared-data.s3.eu-central-1.amazonaws.com/linux.x64_11gR2_database_1of2.zip
+wget -O linux.x64_11gR2_database_1of2.zip https://bupa-shared-data.s3.eu-central-1.amazonaws.com/linux.x64_11gR2_database_1of2.zip
 echo 'Downloading linux.x64_11gR2_database_2of2.zip'
-wget -q -O linux.x64_11gR2_database_2of2.zip https://bupa-shared-data.s3.eu-central-1.amazonaws.com/linux.x64_11gR2_database_2of2.zip
+wget -O linux.x64_11gR2_database_2of2.zip https://bupa-shared-data.s3.eu-central-1.amazonaws.com/linux.x64_11gR2_database_2of2.zip
 echo 'Unzipping'
 unzip -q linux.x64_11gR2_database_1of2.zip
+rm - f linux.x64_11gR2_database_1of2.zip
 unzip -q linux.x64_11gR2_database_2of2.zip
 rm -f linux*.zip
 
