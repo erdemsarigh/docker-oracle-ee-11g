@@ -59,7 +59,7 @@ INVENTORY_LOCATION=/u01/app/oraInventory
 #
 # Example : SELECTED_LANGUAGES=en,fr,ja
 #-------------------------------------------------------------------------------
-SELECTED_LANGUAGES=ar,bn,pt_BR,bg,fr_CA,ca,hr,cs,da,nl,ar_EG,en,en_GB,et,fi,fr,de,el,iw,hu,is,in,it,ja,ko,es,lv,lt,ms,es_MX,no,pl,pt,ro,ru,zh_CN,sk,sl,es_ES,sv,th,zh_TW,tr,uk,vi
+SELECTED_LANGUAGES=en,tr
 
 #-------------------------------------------------------------------------------
 # Complete path of the Oracle Home  
@@ -110,7 +110,7 @@ oracle.install.db.isCustomInstall=false
 #              oracle.clrintg.ode_net:11.2.0.0.2 - Oracle Database Extensions for .NET 1.x (Windows)
 #              oracle.clrintg.ode_net_2:11.2.0.0.2 - Oracle Database Extensions for .NET 2.0 (Windows)
 #-------------------------------------------------------------------------------
-oracle.install.db.customComponents=
+oracle.install.db.customComponents=oracle.rdbms.partitioning:11.2.0.0.2
 
 #-------------------------------------------------------------------------------
 oracle.install.db.DBA_GROUP=dba
@@ -154,7 +154,7 @@ oracle.install.db.config.starterdb.SID=
 #  KO16MSWIN949, ZHS16GBK, TH8TISASCII, ZHT32EUC, ZHT16MSWIN950,
 #  ZHT16HKSCS, WE8ISO8859P9, TR8MSWIN1254, VN8MSWIN1258
 #-------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.characterSet=
+oracle.install.db.config.starterdb.characterSet=WE8ISO8859P9
 #-------------------------------------------------------------------------------
 # Specify the total memory allocation for the database. (in MB)
 # Value should be at least 256 MB, and should not exceed the  
